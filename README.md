@@ -32,3 +32,20 @@ mkdir src/github.com
 mkdir src/github.com/tu_usuario_de_github
 #ahora podemos crear todos nuestros proyectos aquí
 ~~~
+
+## Creando nuestro primer hola mundo
+Dentro del proyecto hay un archivo llamado main.go y contiene mi primer hola mundo.
+en la consola podemos utilizar un comando para la ejecucion y otro para la compilacion.
+~~~go
+package main
+import "fmt"
+
+func main(){
+  fmt.Print("hola mundo")
+}
+~~~
+~~~sh
+go run main.go #para compilar y ejectuar
+go build main.go #para compilar y genera un archivo con el mismo nombre pero sin extensión
+./main #ejecuta el archivo creado
+~~~
