@@ -76,4 +76,10 @@ func main(){
 ~~~
 
 ## funciones
-Podemos utilizarlas para no repetir codigo mientras escribimos nuestros programas 
+Podemos utilizarlas para no repetir codigo mientras escribimos nuestros programas
+
+## Tipos de datos numericos
+En go podemos tener en cuenta los usuarios que utilizan computadoras de 32 y 64 bits, la diferencia es que los numeros de 64 bits son mas precisos ya que pueden tener muchos mas valores.
+
+## Cadenas de texto
+Go tiene soporte nativo para utf-8, asi que no es necesario hacer algo especial para que funcionen nuestros programas en español. Podemos tambien recorrer un estring utilizando los indices, obtener la longitud de una palabra con len()
