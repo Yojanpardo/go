@@ -49,3 +49,28 @@ go run main.go #para compilar y ejectuar
 go build main.go #para compilar y genera un archivo con el mismo nombre pero sin extensión
 ./main #ejecuta el archivo creado
 ~~~
+
+## Variables y constantes
+Dentro de Go podemos utilizar variables y contantes, y tienen sus respectivas formas para ser declaradas, una contante por lo general va a ser global. de la siguiente manera se declaran variables y constantes:
+~~~go
+package main
+import "fmt"
+
+const HELLO_USER string = "Hola %s %s, Bienvenido al fascinante mundo de Go\n"//así se declara una constante
+
+func main(){
+  var name string //esta es la declaración de una variable de tipo string
+  lastname := "apellido" //así tambien se puede declarar una variable y el compilador detecta de que tipo es
+  var (
+    a = 1
+    b = "dos"
+    c = false
+  )//Aqui estoy declarando varias variables al tiempo y el compilador detecta automaticamente de que tipo son
+  fmt.Print("Ingresa tu nombre:")
+  fmt.Scanf("%s", &name)
+  fmt.Print("Ingresa tu apellido:")
+  fmt.Scanf("%s", &lastname)
+  fmt.Printf(HELLO_USER, name, lastname)
+  fmt.Printf("%b %s %t\n",a,b,c)//aqui las formateo para imprimirlas
+}
+~~~
