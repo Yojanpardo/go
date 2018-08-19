@@ -74,3 +74,6 @@ func main(){
   fmt.Printf("%b %s %t\n",a,b,c)//aqui las formateo para imprimirlas
 }
 ~~~
+
+## funciones
+Podemos utilizarlas para no repetir codigo mientras escribimos nuestros programas 
