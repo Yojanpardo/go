@@ -83,3 +83,6 @@ En go podemos tener en cuenta los usuarios que utilizan computadoras de 32 y 64 
 
 ## Cadenas de texto
 Go tiene soporte nativo para utf-8, asi que no es necesario hacer algo especial para que funcionen nuestros programas en español. Podemos tambien recorrer un estring utilizando los indices, obtener la longitud de una palabra con len()
+
+## arrays y slices
+Son dos tipos de vectores, los arrays son fijos y los slices son dinamicos.
