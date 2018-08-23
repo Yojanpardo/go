@@ -86,3 +86,21 @@ Go tiene soporte nativo para utf-8, asi que no es necesario hacer algo especial 
 
 ## arrays y slices
 Son dos tipos de vectores, los arrays son fijos y los slices son dinamicos.
+
+## switch case
+Dentro de Go tambien podemos encontrar el condicional switch, el cual nos permite hacer uso de diferentes opciones y se utiliza de la siguiente manera
+~~~go
+switch variable {
+case caso_con_la_variable:
+    //aqui va la logica
+  default:
+    //acciones por default  
+}
+//tambien se puede hacer con condiciones
+switch {
+case <condition>:
+  //TODO code here
+default:
+  //logica aquí
+}
+~~~
