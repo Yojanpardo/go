@@ -104,3 +104,6 @@ default:
   //logica aquí
 }
 ~~~
+
+## Manejo de paquetes en go
+Al igual que en otros lenguajes de programacion, en go se puede hacer uso de manejo de paquetes, un paquete es una carpeta que contiene archivos para ejecutar.
