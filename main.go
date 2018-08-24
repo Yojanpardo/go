@@ -1,18 +1,33 @@
 package main
-import "fmt"
+import (
+  "fmt"
+  "./numbers"
+)
 
 const HELLO_USER string = "Hola %s %s, Bienvenido al fascinante mundo de Go\n"
 
 func main(){
-  fmt.Print("Ingresa tu nombre:")
-  name := get_text()
-  fmt.Print("Ingresa tu apellido:")
-  lastname := get_text()
-  age, email,phone_number := get_personal_data()
-  fmt.Printf(HELLO_USER, name, lastname)
-  fmt.Printf("tu edad: %d.\ntu email: %s.\ntu numero de telefono: %s.\n",age,email,phone_number)
-  get_hobbies()
-  get_devices()
+  var option int
+  fmt.Println("selecciona la opcion:\n1.ejecutar odd even\n2.ejecutar for cycle\n3.ejecutar el programa normalmente")
+  fmt.Scanf("%d", &option)
+  switch option {
+  case 1:
+    numbers.OddEven()
+  case 2:
+    numbers.ForCicle()
+  case 3:
+    fmt.Print("Ingresa tu nombre:")
+    name := get_text()
+    fmt.Print("Ingresa tu apellido:")
+    lastname := get_text()
+    age, email,phone_number := get_personal_data()
+    fmt.Printf(HELLO_USER, name, lastname)
+    fmt.Printf("tu edad: %d.\ntu email: %s.\ntu numero de telefono: %s.\n",age,email,phone_number)
+    get_hobbies()
+    get_devices()
+  default:
+    fmt.Println("selecciona una opcion valida")
+  }
 }
 
 func get_text() string{

@@ -1,7 +1,7 @@
-package main
+package numbers
 import "fmt"
 
-func main(){
+func OddEven(){
   fmt.Println("ingresa un numero y verificaremos si es par e impar")
   var number int
   fmt.Scanf("%d", &number)

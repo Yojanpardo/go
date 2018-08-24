@@ -1,7 +1,7 @@
-package main
+package numbers
 import "fmt"
 
-func main(){
+func ForCicle(){
   var names []string
   var name string
   friends := 0
