@@ -130,6 +130,27 @@ type Person struct{
   age int
 }
 func main(){
-  person1 := Person{name:"laura",id:1069760389,age:21}
+  person1 := Person{name:"laura",id:2554558,age:21}
+  person2 := new(Person)
+  person2.name = "yojan"
+  person2.id = 1532586664
+  person2.age = 21
+}
+~~~
+para hacerlo de forma mas interactiva podemos llamar el struct a un metodo y lo pasamos como un parametro para poder utilizarlo.
+~~~go
+type Course struct{
+  name string
+  id int
+  url string
+}
+
+func main(){
+  course := Course{Name: "Curso profesional de Go", id:1, url:"/clases/go-basico"}
+  course.Subscribe("yojan")
+}
+
+func (c course) Subscribe(name string){
+  fmt.Printf("La persona %s fue registrada correctamente al curso de ", name, c.name)
 }
 ~~~
