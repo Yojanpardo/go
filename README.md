@@ -114,4 +114,22 @@ Dentro de go existe un tipo de archivo de llave valor que se llama Map, su uso e
 //map[<tipo de dato de la llave>]<tipo de dato del valor>
 amigos_telefono := make(map[string]int)
 amigos_telefono["llave1"]=1
+//tambien se puede asignar valores rapidamente
+mapTest := [string]int{
+  "llave1": 1,
+  "llave2": 2,
+}
+~~~
+
+## structs
+Son un tipo de dato especial que usa go y es parecido a crear un objeto ya que puede contener varios datos y se pueden crear algo como objetos a partir de ellos. su forma de usarlos es asi:
+~~~go
+type Person struct{
+  name string
+  id int
+  age int
+}
+func main(){
+  person1 := Person{name:"laura",id:1069760389,age:21}
+}
 ~~~
