@@ -107,3 +107,11 @@ default:
 
 ## Manejo de paquetes en go
 Al igual que en otros lenguajes de programacion, en go se puede hacer uso de manejo de paquetes, un paquete es una carpeta que contiene archivos para ejecutar.
+
+## Map
+Dentro de go existe un tipo de archivo de llave valor que se llama Map, su uso es similar al de los diccionarios en python pero su declaracion es algo diferente, su forma de declararlo es asi:
+~~~go
+//map[<tipo de dato de la llave>]<tipo de dato del valor>
+amigos_telefono := make(map[string]int)
+amigos_telefono["llave1"]=1
+~~~
